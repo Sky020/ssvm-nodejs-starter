@@ -1,0 +1,22 @@
+{
+  "name": "rand-tracker",
+  "version": "1.0.0",
+  "description": "A rust, node, and webassembly project performing calculations on the GBP to ZAR exchange data",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node",
+    "rust",
+    "webassembly"
+  ],
+  "author": "Shaun Hamilton",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1"
+  }
+}

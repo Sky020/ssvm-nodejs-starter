@@ -1,16 +1,19 @@
 [package]
-name = "ssvm_nodejs_starter"
+name = "rand-tracker"
 version = "0.1.0"
-authors = ["ubuntu"]
+authors = ["Sky020 <2397860h@student.gla.ac.uk>"]
 edition = "2018"
+repository = "https://github.com/Sky020/rust-rand-scraper"
+description = "A Rust-WebAssembly function file built ontop of Nodejs"
+license = "MIT"
 
-[package.metadata.ssvmup.profile.release]
-wasm-opt = ['-O4']
-
-[lib]
-name = "ssvm_nodejs_starter_lib"
-path = "src/lib.rs"
-crate-type =["cdylib"]
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
 wasm-bindgen = "=0.2.61"
+json = "0.12.4"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
